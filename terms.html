@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>利用規約 | BlockRender</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F7F3;
+    --bg-alt:#ECEBE5;
+    --ink:#15161B;
+    --ink-muted:#5B5E68;
+    --line:#DBD9D1;
+    --accent:#FF8A1E;
+    --accent-ink:#8A4A00;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-weight:400;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:var(--accent-ink); text-decoration-thickness:1px; text-underline-offset:3px; }
+  a:hover{ color:var(--accent); }
+
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:96px 28px 140px;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    margin-bottom:88px;
+  }
+
+  .eyebrow{
+    display:inline-block;
+    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.18em;
+    color:var(--accent-ink);
+    margin-bottom:22px;
+  }
+
+  h1{
+    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-weight:900;
+    font-size:clamp(32px, 6vw, 44px);
+    line-height:1.3;
+    margin:0 0 20px;
+    letter-spacing:.01em;
+  }
+
+  .meta{
+    font-size:14px;
+    color:var(--ink-muted);
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 18px;
+  }
+
+  .rule{
+    height:1px;
+    background:var(--line);
+    border:0;
+    margin:40px 0 0;
+  }
+
+  .intro{
+    margin-top:32px;
+    color:var(--ink-muted);
+    font-size:15.5px;
+  }
+
+  /* ---------- Table of contents ---------- */
+  nav.toc{
+    margin-top:44px;
+    padding:28px 28px 30px;
+    background:var(--bg-alt);
+    border:1px solid var(--line);
+  }
+
+  nav.toc p{
+    margin:0 0 14px;
+    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.14em;
+    color:var(--ink-muted);
+  }
+
+  nav.toc ol{
+    margin:0;
+    padding:0;
+    list-style:none;
+    columns:2;
+    -webkit-columns:2;
+    column-gap:24px;
+  }
+
+  nav.toc li{ break-inside:avoid; margin-bottom:9px; font-size:14px; }
+  nav.toc a{ color:var(--ink); }
+  nav.toc a:hover{ color:var(--accent-ink); }
+
+  /* ---------- Articles (block metaphor) ---------- */
+  section.article{
+    position:relative;
+    padding:2px 0 2px 30px;
+    border-left:2px solid var(--line);
+    margin-top:64px;
+    scroll-margin-top:32px;
+  }
+
+  section.article::before{
+    content:"";
+    position:absolute;
+    left:-6px;
+    top:6px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--accent);
+  }
+
+  .art-num{
+    display:block;
+    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.16em;
+    color:var(--accent-ink);
+    margin-bottom:10px;
+  }
+
+  h2{
+    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-weight:700;
+    font-size:21px;
+    margin:0 0 18px;
+    letter-spacing:.01em;
+  }
+
+  section.article p{
+    margin:0 0 14px;
+    color:var(--ink);
+    font-size:15.5px;
+  }
+
+  section.article ul, section.article ol.numbered{
+    margin:0 0 14px;
+    padding-left:1.2em;
+    font-size:15.5px;
+  }
+
+  section.article li{ margin-bottom:8px; }
+
+  .note-box{
+    margin-top:18px;
+    padding:18px 20px;
+    background:var(--bg-alt);
+    border:1px solid var(--line);
+    font-size:14px;
+    color:var(--ink-muted);
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    margin-top:96px;
+    padding-top:32px;
+    border-top:1px solid var(--line);
+    font-size:13px;
+    color:var(--ink-muted);
+  }
+
+  footer .disclaimer{
+    margin-bottom:20px;
+  }
+
+  footer nav a{
+    margin-right:20px;
+  }
+
+  .back-top{
+    display:inline-block;
+    margin-top:28px;
+    font-size:13px;
+    color:var(--ink-muted);
+  }
+
+  @media (max-width:640px){
+    .wrap{ padding:64px 20px 100px; }
+    header{ margin-bottom:56px; }
+    nav.toc ol{ columns:1; }
+    section.article{ margin-top:48px; padding-left:22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="eyebrow">BLOCKRENDER — TERMS</span>
+    <h1>利用規約</h1>
+    <p class="intro">
+      本規約は、Discord上で提供するBot「BlockRender」（以下「本Bot」）の利用条件を定めるものです。
+      本Botをサーバーに追加し、またはメンションして利用した時点で、本規約に同意したものとみなします。
+    </p>
+    <div class="meta">
+      <span>最終更新日：2026年8月27日</span>
+      <span>施行日：2026年8月27日</span>
+    </div>
+    <hr class="rule">
+
+    <nav class="toc">
+      <p>目次</p>
+      <ol>
+        <li><a href="#a1">第1条　本規約について</a></li>
+        <li><a href="#a2">第2条　サービスの内容</a></li>
+        <li><a href="#a3">第3条　利用資格</a></li>
+        <li><a href="#a4">第4条　禁止事項</a></li>
+        <li><a href="#a5">第5条　生成される画像について</a></li>
+        <li><a href="#a6">第6条　知的財産権</a></li>
+        <li><a href="#a7">第7条　Discordの利用規約との関係</a></li>
+        <li><a href="#a8">第8条　サービスの中断・変更・終了</a></li>
+        <li><a href="#a9">第9条　免責事項</a></li>
+        <li><a href="#a10">第10条　規約の変更</a></li>
+        <li><a href="#a11">第11条　お問い合わせ</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <section class="article" id="a1">
+    <span class="art-num">第1条</span>
+    <h2>本規約について</h2>
+    <p>本規約は、本Botの利用者（以下「利用者」）と本Bot運営者（以下「運営者」）との間の、本Botの利用に関わる一切の関係に適用されます。</p>
+  </section>
+
+  <section class="article" id="a2">
+    <span class="art-num">第2条</span>
+    <h2>サービスの内容</h2>
+    <ol class="numbered">
+      <li>本Botは、Discordのメッセージ上でメンションとともに送信されたテキストを解析し、Scratch風のブロックプログラムを画像として生成し、返信するサービスです。</li>
+      <li>生成できるスタイルには、Scratch 3.0、Scratch 2.0、Scratch 3.0（ハイコントラスト）が含まれ、生成後にメニューからスタイルを切り替えることができます。</li>
+      <li>運営者は、利用者への事前の通知なく、本Botの機能の追加・変更・削除を行うことがあります。</li>
+    </ol>
+  </section>
+
+  <section class="article" id="a3">
+    <span class="art-num">第3条</span>
+    <h2>利用資格</h2>
+    <ol class="numbered">
+      <li>利用者は、Discordの利用規約およびコミュニティガイドラインを遵守できる方に限り、本Botを利用できます。</li>
+      <li>Discordの利用規約上、13歳未満の方は本Botを含むDiscordサービス全般をご利用いただけません。</li>
+    </ol>
+  </section>
+
+  <section class="article" id="a4">
+    <span class="art-num">第4条</span>
+    <h2>禁止事項</h2>
+    <p>利用者は、本Botの利用にあたり、以下の行為をしてはなりません。</p>
+    <ul>
+      <li>法令または公序良俗に違反する内容を送信する行為</li>
+      <li>他者の権利（著作権、商標権、プライバシー等）を侵害する内容を送信する行為</li>
+      <li>本Botに対する過度なリクエストの送信等、サーバーまたはDiscordのAPIに不当な負荷をかける行為</li>
+      <li>本Botの仕組みやソースコードを不正に解析・複製・改変する行為</li>
+      <li>その他、運営者が不適切と判断する行為</li>
+    </ul>
+  </section>
+
+  <section class="article" id="a5">
+    <span class="art-num">第5条</span>
+    <h2>生成される画像について</h2>
+    <ol class="numbered">
+      <li>本Botが生成する画像は、利用者が入力したテキストをもとに自動生成されるものであり、内容の正確性・完全性を保証するものではありません。</li>
+      <li>入力内容によっては、意図しないレイアウトや表示になる場合があります。</li>
+      <li>生成された画像の利用（保存、共有、二次利用等）は、利用者ご自身の責任において行ってください。</li>
+    </ol>
+  </section>
+
+  <section class="article" id="a6">
+    <span class="art-num">第6条</span>
+    <h2>知的財産権</h2>
+    <ol class="numbered">
+      <li>本Bot自体（プログラム、デザイン等）に関する権利は、運営者または正当な権利者に帰属します。</li>
+      <li>利用者が入力したテキストの著作権は、当該利用者または正当な権利者に留保されます。</li>
+      <li>「Scratch」はScratch財団の登録商標です。本Botは同財団と提携・承認された公式サービスではありません。</li>
+    </ol>
+  </section>
+
+  <section class="article" id="a7">
+    <span class="art-num">第7条</span>
+    <h2>Discordの利用規約との関係</h2>
+    <p>本Botの利用にあたっては、本規約に加え、Discord Inc.が定める利用規約およびコミュニティガイドラインが適用されます。両者の内容が矛盾する場合は、Discordの規約が優先します。</p>
+  </section>
+
+  <section class="article" id="a8">
+    <span class="art-num">第8条</span>
+    <h2>サービスの中断・変更・終了</h2>
+    <p>運営者は、以下のいずれかに該当すると判断した場合、利用者への事前の通知なく、本Botの提供の全部または一部を中断・変更・終了できるものとします。</p>
+    <ul>
+      <li>システムの保守点検または更新を行う場合</li>
+      <li>地震、落雷、火災、停電等の不可抗力により本Botの提供が困難な場合</li>
+      <li>Discordのサービス仕様変更、API制限、障害等により提供が困難な場合</li>
+      <li>その他、運営者が必要と判断した場合</li>
+    </ul>
+  </section>
+
+  <section class="article" id="a9">
+    <span class="art-num">第9条</span>
+    <h2>免責事項</h2>
+    <ol class="numbered">
+      <li>運営者は、本Botに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定目的への適合性、不具合、権利侵害等を含みます）がないことを、明示的にも黙示的にも保証しません。</li>
+      <li>運営者は、本Botの利用または利用不能により利用者に生じた損害について、運営者の故意または重過失による場合を除き、一切の責任を負いません。</li>
+      <li>本Botは無償で提供されるものであり、継続的な提供を保証するものではありません。</li>
+    </ol>
+  </section>
+
+  <section class="article" id="a10">
+    <span class="art-num">第10条</span>
+    <h2>規約の変更</h2>
+    <p>運営者は、必要と判断した場合、利用者への個別の通知を行うことなく本規約を変更できるものとします。変更後の規約は、本ページに掲載した時点から効力を生じるものとします。</p>
+  </section>
+  
+  <section class="article" id="a11">
+    <span class="art-num">第11条</span>
+    <h2>お問い合わせ</h2>
+    <p>本規約に関するお問い合わせは、以下の窓口までご連絡ください。</p>
+    <div class="note-box">
+      運営者：YU1000<br>
+      連絡先：https://discord.gg/8mXHHCutZH
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+    <a class="back-top" href="#">ページ先頭へ戻る</a>
+  </footer>
+
+</div>
+</body>
+</html>
